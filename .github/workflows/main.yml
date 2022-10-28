@@ -3,7 +3,7 @@ name: my workflow
 on:
   # Triggers when something in the www path on the main branch of your repo changes
   push:
-    branches: [ master ]
+    branches: [ main ]
     paths: [ 'www/**' ]
 
   # Allows you to run this workflow manually from the Actions tab

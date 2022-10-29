@@ -1,0 +1,228 @@
+body {
+  font-family: "Comic Sans";
+  font-style: bold;
+  background-color: #fec9cf;
+}
+.top-image {
+  display: flex;
+  max-height: 100px;
+  background-color: white;
+  justify-content: center;
+}
+
+.menu-container {
+  color: #fff;
+  background-color: #5995da; /* Blue */
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+.menu {
+  border: 1px solid #fff;
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photoCollage {
+  display: flex;
+  flex-flow: row wrap;
+}
+.link-outline {
+  color: #f2a384;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+.flex {
+  border-radius: 10px;
+}
+.review {
+  display: flex;
+  flex-flow: column-wrap;
+  border-width: 5px;
+  border: 2px solid #fff;
+  background-color: #fb7184;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0;
+}
+.review-text {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.review::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.review img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.main-background-image {
+  position: absolute;
+}
+.parent {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  top: 0;
+  left: 0;
+  padding-left: 4%;
+  width: 50%;
+}
+.main-profile-image {
+  display: flex;
+  position: relative;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  justify-content: center;
+}
+.main-profile-image img {
+  border-radius: 5px;
+  border-radius: 60%;
+  margin-bottom: 20px;
+  min-width: 200px;
+  margin-left: 20px;
+}
+.main-text-box {
+  position: relative;
+  float: left;
+  top: 0;
+  left: 0;
+  font-family: "Comic Sans";
+  font-style: bold;
+  font-size: 200%;
+  text-align: center;
+}
+
+.review-container {
+  background-color: #fec9cf;
+  margin: 0 10% 0 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.review span {
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.Photo-Grid {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: center;
+  grid-template: auto auto auto auto auto / 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  flex-direction: space-around;
+}
+.photo-card {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.photo-card img {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.description-box {
+  display: flex;
+  flex-direction: center;
+}
+.get-to-know-you {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  align-content: center;
+}
+.subheadings {
+  font-family: "courier new";
+  font-size: 24px;
+}
+
+.photo-block {
+  display: box;
+  width: 100%;
+  position: center;
+}
+.comment-box {
+  display: flex;
+  /*border: 2px solid #ccc;*/
+  /*background-color: #eee;*/
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+/* desktop styles */
+@media only screen and (min-width: 970px) {
+  .photos {
+    width: 100%;
+  }
+  .photo-card {
+    width: 30%;
+    display: flex;
+  }
+  .review {
+    text-align: center;
+    background-color: #fb7184;
+    border-radius: 10px;
+  }
+  .review img {
+    margin: auto;
+    float: none;
+    display: block;
+  }
+  .main-background-image {
+    position: absolute;
+  }
+  .parent {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    top: 0;
+    left: 0;
+    padding-left: 4%;
+    width: 50%;
+  }
+  .main-profile-image {
+    display: flex;
+    position: relative;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    justify-content: center;
+  }
+  .main-profile-image img {
+    border-radius: 5px;
+    border-radius: 60%;
+    margin-bottom: 20px;
+    min-width: 300px;
+  }
+  .main-text-box {
+    position: relative;
+    float: left;
+    top: 0;
+    left: 0;
+    border: 1px blue solid;
+    font-family: "Comic Sans";
+    font-style: bold;
+    font-size: 200%;
+    text-align: center;
+  }
+}

@@ -37,8 +37,14 @@
         }
 
         render() {
-          const listItems = this.state.cities.map((cityname) => (
-            <li key={cityname.city}>{cityname.city}</li>
+          const listItems = this.state.tasks.map((thistask, index) => (
+            <li
+              className={thistask.completed ? "strike" : "todo"}
+              onClick={(event) => this.handleToggle(event, index)}
+              key={thistask.task}
+            >
+              {thistask.task}
+            </li>
           ));
           return (
             <div>
